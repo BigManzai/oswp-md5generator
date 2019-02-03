@@ -76,12 +76,12 @@ class oswp_md5generator extends WP_Widget {
 		);
 
 		// Register admin styles and scripts
-		add_action( 'admin_print_styles', array( $this, 'register_admin_styles' ) );
-		add_action( 'admin_enqueue_scripts', array( $this, 'register_admin_scripts' ) );
+		//add_action( 'admin_print_styles', array( $this, 'register_admin_styles' ) );
+		//add_action( 'admin_enqueue_scripts', array( $this, 'register_admin_scripts' ) );
 
 		// Register site styles and scripts
-		add_action( 'wp_enqueue_scripts', array( $this, 'register_widget_styles' ) );
-		add_action( 'wp_enqueue_scripts', array( $this, 'register_widget_scripts' ) );
+		//add_action( 'wp_enqueue_scripts', array( $this, 'register_widget_styles' ) );
+		//add_action( 'wp_enqueue_scripts', array( $this, 'register_widget_scripts' ) );
 
 		// Refreshing the widget's cached output with each new post
 		add_action( 'save_post',    array( $this, 'flush_widget_cache' ) );
@@ -248,4 +248,11 @@ class oswp_md5generator extends WP_Widget {
 } // end class
 
 // TODO: Remember to change 'oswp_md5generator' to match the class name definition
-add_action( 'widgets_init', create_function( '', 'register_widget("oswp_md5generator");' ) );
+//$callback = function() { echo str_replace( '', 'register_widget("oswp_md5generator");' ); };
+
+//add_action( 'widgets_init', create_function( '', 'register_widget("oswp_md5generator");' ) );
+
+function oswp_md5generator_register_widget() {
+register_widget('oswp_md5generator');
+}
+add_action('widgets_init', 'oswp_md5generator_register_widget');
