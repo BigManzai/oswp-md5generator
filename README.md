@@ -5,7 +5,20 @@ Wordpress Plugin
 
 Erstellt aus einem Passwort ein MD5 hash.
 
-Wenn du dich fragst wozu, dann brauchst du das nicht
+Wenn du dich fragst wozu, dann brauchst du das nicht.
+
+### Install
+Die Plugin stellen ein Widget zur verfügung.
+
+Nach dem Aktivieren im Theme bereich steht ein Widget zur verfügung.
+
+The plugin provide a widget.
+
+After activating in the theme area a widget is available.
+
+Le plugin fournit un widget.
+
+Après activation dans la zone de thème, un widget est disponible.
 
 ### Lizens
 
