@@ -14,7 +14,7 @@
  * Plugin Name:       oswp-md5generator
  * Plugin URI:        https://github.com/BigManzai/oswp-md5generator
  * Description:       Das Plugin ist ein md5 hash generator.
- * Version:           1.0.0
+ * Version:           1.0.2
  * Author:            Manfred Aabye
  * Author URI:        http://openmanniland.de
  * Text Domain:       oswp-md5generator
@@ -198,7 +198,7 @@ class oswp_md5generator extends WP_Widget {
 
 		// Display the admin form
 		// Das Admin-Formular anzeigen
-		include( plugin_dir_path(__FILE__) . 'views/oswp-md5generator-admin.php' );
+		//include( plugin_dir_path(__FILE__) . 'views/oswp-md5generator-admin.php' );
 
 	} // end form
 
